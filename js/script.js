@@ -1,7 +1,7 @@
 
 const container1 = document.querySelector(".container");
 const container2 = document.querySelector(".container2");
-const container3 = document.querySelector(".container2");
+const container3 = document.querySelector(".container3");
 
 const nameFull = document.querySelector(`#name`);
 const email = document.querySelector(`#email`);
@@ -43,10 +43,14 @@ const oneSelect = topics.forEach(topic=> {
 })
 
 const handleTopicsClick = () => {
-    if (oneSelect) {
+    const selectedTopics = document.querySelectorAll(".topics.selected");
+    if(selectedTopics.length >= 1) {
         container2.classList.add("hidden");
         container3.classList.remove("hidden");
+    } else {
+        alert("Please select at least one topic.")
     }
+
 }
 
 buttonContinue2.addEventListener("click", handleTopicsClick);
