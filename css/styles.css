@@ -114,6 +114,10 @@ h2 {
     font-family: 'Sora', sans-serif;
 }
 
+.container3 {
+    padding-right: 1rem;
+}
+
 h3 {
     margin: -2.5rem 5rem 0rem 0rem;
 }
@@ -132,6 +136,14 @@ h3 {
 }
 p.title {
     margin-top: 2.5rem;
+}
+.topics {
+    background-color: transparent;
+    border: none;
+
+}
+ul {
+    margin-top: 0rem;
 }
 li {
     color: white;
