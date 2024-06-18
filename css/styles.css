@@ -39,6 +39,8 @@ body {
     padding: 5rem 0rem 3rem 2rem;
 }
 
+
+
 h1{
     margin: -2.5rem 0rem 1rem 1rem;
     font-size: 1.2rem; 
@@ -69,7 +71,7 @@ input {
 }
 
 .div-button {
-    margin: 1.5rem 3rem 0rem 1rem;
+    margin: 1.5rem 3rem -1rem 1rem;
     text-align: center;
 }
 .continue,
@@ -82,9 +84,7 @@ input {
     border: none;
     border-radius: 2rem;
 }
-p.topics {
 
-}
 p:hover,
 button:hover {
     background: linear-gradient(#b064e6, #8727b7);
@@ -100,13 +100,7 @@ h2 {
     margin: -2.5rem 5rem 0rem 1rem;
 }
 
-.container2 {
-    text-align: start;
-    border: 1px solid rgb(105, 105, 105);
-    border-radius: 15px;
-    background-color: #232935;
-    padding: 5rem 0rem 3rem 2rem;
-}
+
 .topics {
     padding: 1rem 13rem 1rem 1rem;
     margin-bottom: 1rem;
@@ -138,7 +132,7 @@ h2 {
 }
 
 h3 {
-    margin: -2.5rem 5rem 0rem 0rem;
+    margin: -2.5rem 19rem 0rem 0rem;
 }
 
 .title,
@@ -166,9 +160,10 @@ p.title {
 }
 ul {
     margin-top: 0rem;
+    margin-bottom: 2rem
 }
 ul.topics {
-       margin-top: -0.8rem; 
+    margin-top: -0.8rem; 
 }
 li {
     color: white;
