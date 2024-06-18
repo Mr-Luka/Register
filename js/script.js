@@ -35,6 +35,10 @@ buttonContinue.addEventListener("click", handleInputClick);
 
 const buttonContinue2 = document.querySelector("#con2");
 const topics = document.querySelectorAll(".topics");
+const sumName = document.querySelector("p.sum");
+const sumEmail = document.querySelector("p#email-p");
+console.log(sumEmail)
+console.log(sumName)
 
 const oneSelect = topics.forEach(topic=> {
     topic.addEventListener("click", handleSelect=()=>{
@@ -49,10 +53,13 @@ const handleTopicsClick = () => {
         container3.classList.remove("hidden");
     } else {
         alert("Please select at least one topic.")
-    }
-
+    };
+    sumName.textContent = `Name: ${nameVal}`;
+    sumEmail.textContent = `Email: ${emailVal}`;
 }
-
 buttonContinue2.addEventListener("click", handleTopicsClick);
 
-console.log(buttonContinue2);
+
+
+
+const confirmButton = document.querySelector("#confirm");
