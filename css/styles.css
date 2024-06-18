@@ -28,7 +28,9 @@ body {
     align-items: center;
 }
 
-.container {
+.container,
+.container2,
+.container3 {
     text-align: start;
     border: 1px solid rgb(105, 105, 105);
     border-radius: 15px;
@@ -143,7 +145,7 @@ h3 {
 p.title {
     margin-top: 2.5rem;
 }
-.topics {
+.topics2 {
     background-color: transparent;
     border: none;
 

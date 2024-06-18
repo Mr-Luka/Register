@@ -13,6 +13,17 @@ const handleInputClick = () => {
     emailVal = email.value;
     const correctName = /^[a-z ,.'-]+$/i;
     const correctEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+    if (!nameVal || !emailVal) {
+        alert("Please fill in both name and email")
+    } else if (!correctName.test(nameVal)){
+        alert("Please enter a valid name");
+    } else if (!correctEmail.test(emailVal)){
+        alert("Please enter a valid email address")
+    } else {
+        container1.classList.add("hidden");
+        container2.classList.remove("hidden");
+    }
 } 
 
 buttonContinue.addEventListener("click", handleInputClick);
