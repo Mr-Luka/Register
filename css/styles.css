@@ -114,6 +114,29 @@ h2 {
     font-family: 'Sora', sans-serif;
 }
 
+h3 {
+    margin: -2.5rem 5rem 0rem 0rem;
+}
+
+.title,
+.topics {
+    font-size: 1rem;
+}
+.title {
+    margin-bottom: 0rem;
+    color: rgb(151, 150, 150); 
+}
+.sum {
+    font-size: 1rem;
+    color: white;
+}
+p.title {
+    margin-top: 2.5rem;
+}
+li {
+    color: white;
+    background-color: none;
+}
 
 
 
