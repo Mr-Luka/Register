@@ -33,19 +33,45 @@ body {
     border: 1px solid rgb(105, 105, 105);
     border-radius: 15px;
     background-color: #232935;
-    padding: 5rem 7rem 5rem 7rem;
+    padding: 5rem 0rem 3rem 2rem;
 }
 
 h1 {
-    margin: -2.5rem 11rem 1rem -4rem;
+    margin: -2.5rem 0rem 1rem 1rem;
     font-size: 1.2rem; 
 }
 form {
-    margin: 1.5rem 11rem 0rem -4rem;
+    margin: 2.2rem 3rem 0rem 1rem;
 }
 p{
     font-size: 0.8rem;
-    margin-bottom: 0;
+    margin-bottom: 0.4rem;
+    color: rgb(175, 175, 175)
+}
+input {
+    padding: 1rem 11rem 1rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #232935;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 10px;
+}
+::placeholder {
+    color: rgb(105, 105, 105)
+}
+
+.div-button {
+    margin: 1.5rem 3rem 0rem 1rem;
+    text-align: center;
+}
+button {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    background: linear-gradient(#8564e6, #6127b7);
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.7rem;
+    border: none;
+    border-radius: 2rem;
+    
 }
 
 
