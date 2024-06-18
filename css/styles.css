@@ -148,6 +148,9 @@ p.title {
 ul {
     margin-top: 0rem;
 }
+ul.topics {
+       margin-top: -0.8rem; 
+}
 li {
     color: white;
     background-color: none;
