@@ -28,6 +28,7 @@ body {
     align-items: center;
 }
 
+
 .container,
 .container2,
 .container3 {
@@ -71,7 +72,8 @@ input {
     margin: 1.5rem 3rem 0rem 1rem;
     text-align: center;
 }
-.continue {
+.continue,
+.continue2 {
     padding: 1rem 2.5rem 1rem 2.5rem;
     background: linear-gradient(#8564e6, #6127b7);
     color: white;
@@ -80,6 +82,10 @@ input {
     border: none;
     border-radius: 2rem;
 }
+p.topics {
+
+}
+p:hover,
 button:hover {
     background: linear-gradient(#b064e6, #8727b7);
     color: white;
@@ -113,6 +119,11 @@ h2 {
 #topic3 {
     width: 100%;
     text-align: start;
+    margin-top: 0rem;
+}
+#topic1,
+#topic2 {
+    margin-bottom: 0rem;
 }
 
 /* Add this in JavaScript to add the colour to the selected topic */
