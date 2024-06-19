@@ -37,8 +37,8 @@ const buttonContinue2 = document.querySelector("#con2");
 const topics = document.querySelectorAll(".topics");
 const sumName = document.querySelector("p.sum");
 const sumEmail = document.querySelector("p#email-p");
-console.log(sumEmail)
-console.log(sumName)
+const ul = document.querySelector("ul");
+
 
 const oneSelect = topics.forEach(topic=> {
     topic.addEventListener("click", handleSelect=()=>{
@@ -51,11 +51,19 @@ const handleTopicsClick = () => {
     if(selectedTopics.length >= 1) {
         container2.classList.add("hidden");
         container3.classList.remove("hidden");
+
+        sumName.textContent = `Name: ${nameVal}`;
+        sumEmail.textContent = `Email: ${emailVal}`;
+
+        ul.innerHTML = '';
+        selectedTopics.forEach(topic=> {
+            const li = document.createElement("li");
+            li.textContent = topic.textContent;
+            ul.appendChild(li);
+        })
     } else {
         alert("Please select at least one topic.")
     };
-    sumName.textContent = `Name: ${nameVal}`;
-    sumEmail.textContent = `Email: ${emailVal}`;
 }
 buttonContinue2.addEventListener("click", handleTopicsClick);
 
