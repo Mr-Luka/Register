@@ -74,13 +74,17 @@ const confirmButton = document.querySelector("#confirm");
 const startOver = () => {
     container3.classList.add("hidden");
     container1.classList.remove("hidden");
-    nameInput.value = '';
-    emailInput.value = '';
-    topics.forEach(topic=> topic.classList.remove("selected"));
-
 }
 
 confirmButton.addEventListener("click", handleConfirm=()=>{
-    container3.classList.add("confirmed");
+    container3.classList.add("shake");
+    container3.addEventListener("animationend", shaking = ()=>{
+        container3.classList.remove("shake");
+    }, {once: true})
+    setTimeout(startOver, 2000);
+
+    nameFull.value = '';
+    email.value = '';
+    topics.forEach(topic=> topic.classList.remove("selected"));
 
 });
