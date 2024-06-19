@@ -71,3 +71,16 @@ buttonContinue2.addEventListener("click", handleTopicsClick);
 
 
 const confirmButton = document.querySelector("#confirm");
+const startOver = () => {
+    container3.classList.add("hidden");
+    container1.classList.remove("hidden");
+    nameInput.value = '';
+    emailInput.value = '';
+    topics.forEach(topic=> topic.classList.remove("selected"));
+
+}
+
+confirmButton.addEventListener("click", handleConfirm=()=>{
+    container3.classList.add("confirmed");
+
+});
